@@ -1,4 +1,4 @@
-# MRIO Domestic Balancing Automation
+# Multiregional Input-Output Table Domestic Balancing Automation
 
 Public project overview for the MRIO Domestic Balancing Automation app.
 
