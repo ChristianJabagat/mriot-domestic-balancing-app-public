@@ -177,6 +177,37 @@ h3 {
   line-height: 1.65;
 }
 
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.screenshot-card {
+  margin: 0;
+  overflow: hidden;
+  background: var(--panel-strong);
+  border: 1px solid rgba(0, 174, 239, 0.36);
+  border-radius: 8px;
+  box-shadow: 0 1rem 3rem rgba(1, 49, 71, 0.08);
+}
+
+.screenshot-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: left top;
+  border-bottom: 1px solid rgba(0, 174, 239, 0.24);
+}
+
+.screenshot-card figcaption {
+  padding: 0.85rem 1rem;
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
 .split {
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
@@ -217,6 +248,7 @@ footer {
   }
 
   .feature-grid,
+  .screenshot-grid,
   .split {
     grid-template-columns: 1fr;
   }

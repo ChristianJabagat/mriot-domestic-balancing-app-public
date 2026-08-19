@@ -25,6 +25,7 @@ Source code is private. Please contact the maintainer to request access.
 - [User Guide](docs/user-guide.md)
 - [Methodology Summary](docs/methodology-summary.md)
 - [Access Request Notes](docs/access-request.md)
+- [Approved Interface Screenshots](screenshots/)
 
 ## GitHub Pages
 
@@ -57,3 +58,6 @@ This public repository intentionally excludes:
 - Windows and macOS executable build artifacts.
 - Internal testing files and private data.
 
+## Screenshots
+
+The screenshots in this repository show the app interface in a clean light-mode state before any private files are uploaded. They are included only to preview the workflow pages and do not show confidential input data or generated results.
