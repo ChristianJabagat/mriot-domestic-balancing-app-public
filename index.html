@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MRIO Domestic Balancing Automation</title>
+    <meta name="description" content="Public overview for the MRIO Domestic Balancing Automation app.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand-mark">MRIO</div>
+      <nav aria-label="Primary navigation">
+        <a href="#workflows">Workflows</a>
+        <a href="#methodology">Methodology</a>
+        <a href="#outputs">Outputs</a>
+        <a href="#access">Access</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Domestic Balancing Automation</p>
+          <h1>MRIO domestic transaction balancing, compilation, and change analysis.</h1>
+          <p class="lead">
+            A workflow application for producing balanced domestic transaction tables, inserting them into
+            pre-final MRIOT workbooks, and reviewing domestic transaction changes across years or methodologies.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="docs/user-guide.md">Read User Guide</a>
+            <a class="button secondary" href="#access">Request Source Access</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="workflows" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Application Pages</p>
+          <h2>Three connected workflows</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Domestic Balancing</h3>
+            <p>
+              Extracts a country domestic seed matrix from an MRIO workbook, reads reviewed controls,
+              applies manual balancing, runs ordinary RAS, and optionally performs bounded RAS refinement.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Compile MRIOT</h3>
+            <p>
+              Fills empty domestic diagonal blocks in a pre-final MRIOT workbook using final balanced
+              domestic tables, then produces validation checks for the compiled workbook.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Domestic Change Analysis</h3>
+            <p>
+              Compares domestic transaction cells between a base full MRIOT and uploaded final domestic
+              tables, producing summaries, flags, charts, and heatmap outputs.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="methodology" class="section split">
+        <div>
+          <p class="eyebrow">Methodology</p>
+          <h2>Designed for controlled MRIO production review</h2>
+        </div>
+        <div class="prose">
+          <p>
+            The domestic balancing workflow uses the previous MRIO structure as a seed, reviewed row and
+            column controls as targets, and proportional matrix fitting to produce a balanced table.
+          </p>
+          <p>
+            Growth diagnostics compare each final balanced cell with its seed value. Optional bounded RAS
+            refinement caps the most severe non-exempt growth breach one step at a time and preserves the
+            latest accepted balanced checkpoint if a later step reaches a dead end.
+          </p>
+        </div>
+      </section>
+
+      <section id="outputs" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Outputs</p>
+          <h2>Review-ready workbooks and summaries</h2>
+        </div>
+        <ul class="output-list">
+          <li>Final balanced domestic table workbooks.</li>
+          <li>Full domestic balancing output workbooks with logs and diagnostics.</li>
+          <li>Batch ZIP outputs and consolidated final domestic tables workbooks.</li>
+          <li>Compiled MRIOT workbooks and compilation validation workbooks.</li>
+          <li>Domestic change-analysis workbooks with summary sheets, charts, and heatmaps.</li>
+        </ul>
+      </section>
+
+      <section id="access" class="section access-panel">
+        <p class="eyebrow">Access</p>
+        <h2>Source code is private</h2>
+        <p>
+          This public site describes the project and its workflows. The application source code, internal
+          data, uploaded workbooks, generated outputs, and executable packages are not published here.
+        </p>
+        <p>
+          Please contact the maintainer to request access to the private repository.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>MRIO Domestic Balancing Automation public overview.</p>
+    </footer>
+  </body>
+</html>
